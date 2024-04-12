@@ -68,16 +68,13 @@ $primary-color: #1E83B4;
 }
 
 .link {
-  width: 216px;
-  height: 28px;
-  top: 933px;
-  left: 1211px;
 
   font-family: Open Sans;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  text-align: left;
+  text-align: center;
+  text-decoration: none;
   color: white;
 }
 
@@ -121,6 +118,7 @@ $primary-color: #1E83B4;
     padding: 24px 239px 24px 239px;
     gap: 10px;
     border-radius: 8px;
+    margin-bottom: 30px;
 
     font-family: Open Sans;
     font-size: 25px;
