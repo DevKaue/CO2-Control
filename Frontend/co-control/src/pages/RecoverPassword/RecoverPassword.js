@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
-import './Login.scss'; // Importando o arquivo CSS
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import './RecoverPassword.scss'; // Importando o arquivo CSS
 import imageLogin from '../../assets/imgs/Img-senha.svg';
 import logo from '../../assets/imgs/Logo-site.svg';
 import { Link } from 'react-router-dom';
 
-class Login extends React.Component {
+class RecoverPassword extends React.Component {
   render() {
     return (
       <div className="container">
@@ -20,17 +20,13 @@ class Login extends React.Component {
               <FontAwesomeIcon icon={faEnvelope} className="input-icon"/>
               <input type="email" placeholder="Seu e-mail" />
             </div>
-            <div className="input-container">
-              <FontAwesomeIcon icon={faLock} className="input-icon"/>
-              <input type="password" placeholder="Sua senha" />
-            </div>
-            <button type="submit">Entrar</button>
+            <button type="submit">Obter código</button>
           </form>
-          <Link to="recover-password" className="link">Esqueceu sua senha?</Link>
+          <Link to="/">Voltar para Login</Link>
         </div>
       </div>
     );
   }
 }
 
-export default Login;
+export default RecoverPassword;
