@@ -1,0 +1,139 @@
+// Login.scss
+
+$primary-color: #1E83B4;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.imageLogin {
+  /* Img senha */
+  position: relative;
+  width: 629px;
+  height: 629px;
+  left: 214px;
+  // right: 300px;
+  top: 143px;
+}
+
+.h1 {
+  font-family: Open Sans;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+
+}
+
+.h2 {
+  font-family: Open Sans;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.logo {
+  width: 201px;
+  height: 201px;
+  top: 42px;
+  left: 1203px;
+}
+
+.input-container {
+  position: relative;
+
+  // Estilo para o ícone
+  .input-icon {
+    position: absolute;
+    top: 34%;
+    width: 42.5px;
+    height: 34px;
+
+    color: #1E83B4;
+    z-index: 1; // para garantir que o ícone esteja na frente do input
+  }
+
+  // Estilo para o input de e-mail
+  input[type="email"] {
+    padding-left: 50px; // garantir que o texto não fique por baixo do ícone
+  }
+   // Estilo para o input de senha
+   input[type="password"] {
+    padding-left: 50px; // garantir que o texto não fique por baixo do ícone
+  }
+}
+.login-container {
+  background-color: #003F63;
+  color: white;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  
+  width: 820px;
+  margin-left: 300px;
+  gap: 0px;
+  opacity: 0px;
+
+  
+  input 
+  {
+    position: relative;
+    width: 544px;
+    height: 47px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+
+
+  }
+
+  button 
+  {
+    width: Fixed (542px)px;
+    height: Fixed (76px)px;
+    padding: 24px 239px 24px 239px;
+    gap: 10px;
+    border-radius: 8px;
+
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+
+
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  p 
+  {
+    margin-top: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    /* Styles for notebook-sized screens */
+    .login-container {
+      max-width: 900px; /* Adjust as needed */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+  }
+}
