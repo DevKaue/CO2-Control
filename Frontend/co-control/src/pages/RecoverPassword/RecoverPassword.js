@@ -22,7 +22,9 @@ class RecoverPassword extends React.Component {
             </div>
             <button type="submit">Obter código</button>
           </form>
-          <Link to="/">Voltar para Login</Link>
+          <ul className="back">
+            <Link to="/" className="link">Voltar para Login</Link>
+          </ul>
         </div>
       </div>
     );
