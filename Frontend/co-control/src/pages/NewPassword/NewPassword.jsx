@@ -1,21 +1,18 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLock } from '@fortawesome/free-solid-svg-icons';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './NewPassword.scss'; // Importando o arquivo CSS
 import imageLogin from '../../assets/imgs/Img-senha.svg';
 import logo from '../../assets/imgs/Logo-site.svg';
 
 
-export const NewPassword = () => {
+const NewPassword = () => {
 
-    const history = useHistory();
+    const navigate  = useNavigate();
 
     const handleclick = () => {
-        // window.location.href = '/'
-        history.push({
-            pathname: "/"
-        })
+        navigate('/');
         console.log('Clicou')
     }
 
@@ -36,7 +33,7 @@ export const NewPassword = () => {
               <FontAwesomeIcon icon={faLock} className="input-icon"/>
               <input type="password" placeholder="Confime sua senha" />
             </div>
-            <button type="submit" onClick={handleclick()}>Continuar</button>
+            <button type="submit" onClick={handleclick}>Continuar</button>
           </form>
         </div>
       </div>
