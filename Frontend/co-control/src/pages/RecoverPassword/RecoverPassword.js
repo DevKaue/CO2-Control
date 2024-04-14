@@ -13,8 +13,8 @@ class RecoverPassword extends React.Component {
         <img src={imageLogin} className="imageLogin" alt="Imagem de Login" />
         <div className="login-container">
           <img src={logo} className="logo" alt="Logo" />
-          <h1>Olá, seja bem-vindo de volta!</h1>
-          <h2>Faça seu login agora</h2>
+          <h1>Esqueceu sua senha?<br/>Recupere via e-mail agora</h1>
+          <h2>Insira a sua conta existente</h2>
           <form>
             <div className="input-container">
               <FontAwesomeIcon icon={faEnvelope} className="input-icon"/>
